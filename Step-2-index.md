@@ -2,6 +2,8 @@
 
 - Require server
 
+# Example of a index.js file:
+
 ```javascript
 const server = require("./api/server");
 

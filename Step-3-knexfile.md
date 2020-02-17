@@ -4,6 +4,8 @@
   - npx knex init
   - create configs in knexfile.js
 
+# Example of a knex file:
+
 ```javascript
 module.exports = {
   development: {

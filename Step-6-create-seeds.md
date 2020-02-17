@@ -6,6 +6,8 @@
 
   - example of multiple seeds create sequentially exist [here](https://github.com/FreedomWriter/node-db-challenge/tree/master/data/seeds)
 
+# Example seed data:
+
 ```javascript
 exports.seed = async function(knex) {
   await knex("tasks").truncate();

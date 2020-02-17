@@ -4,6 +4,8 @@
 - this table include examples of foreign keys and intermediary tables
 - npx migrate:make initial
 
+# Example of a Tables Migration:
+
 ```javascript
 exports.up = async function(knex) {
   await knex.schema.createTable("projects", tbl => {

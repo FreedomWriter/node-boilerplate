@@ -3,6 +3,8 @@
 - create directory named `api`
 - create file named `server.js`
 
+# Example of a server file:
+
 ```javascript
 const express = require("express");
 const morgan = require("morgan");

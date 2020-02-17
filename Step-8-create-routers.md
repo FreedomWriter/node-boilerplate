@@ -6,6 +6,8 @@ These files are using `bcrypt`, `jwt`, `secrets`
 We are generating our `token` in this file
 We `hash` the password on `register` before sending it on to our model to be added to the db
 
+# Example of an Auth Router:
+
 ```javascript
 const router = require("express").Router();
 const bcrypt = require("bcryptjs");

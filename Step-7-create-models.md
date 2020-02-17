@@ -8,6 +8,8 @@
 
 - These are very simple models, you will likely need to perform a number of joins to return the data the front end needs
 
+# Example of a model:
+
 ```javascript
 const db =
   require("../data/db.config") -
