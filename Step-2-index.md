@@ -5,6 +5,7 @@
 # Example of a index.js file:
 
 ```javascript
+require("dotenv").config();
 const server = require("./api/server");
 
 //define port
