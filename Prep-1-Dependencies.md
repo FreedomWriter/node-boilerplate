@@ -13,6 +13,8 @@ npx gitignore node
 
 # Sessions and Cookies
 
+-npm i express-session
+
 # .env file
 
 PORT = 5000
