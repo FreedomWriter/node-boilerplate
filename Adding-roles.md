@@ -21,8 +21,7 @@
     };
     ```
 
-2.  Add priveldges to token when we hand it back to the browser
-    role restricted to Admin
+2.  Use middleware in routes restricted by role
 
     ```js
     router.get("/", restricted, checkRole("Admin"), (req, res) => {
@@ -34,7 +33,8 @@
     });
     ```
 
-3)  Add role to payload
+3)  Add priveldges to token when we hand it back to the browser
+    role restricted to Admin
 
     ```js
     function genToken(user) {
