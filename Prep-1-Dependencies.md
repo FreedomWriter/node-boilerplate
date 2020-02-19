@@ -7,6 +7,14 @@ npm i express cors morgan helmet sqlite3 dotenv knex bcryptjs
 npx gitignore node
 ```
 
+# Add scripts
+
+    ```js
+            "server": "nodemon index.js",
+        "start": "node index.js",
+        "test": "jest --verbose --watch"
+    ```
+
 # JWT
 
 - npm i jsonwebtoken

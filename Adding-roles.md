@@ -1,4 +1,4 @@
-3 parts to making `roles` work
+## 3 parts to making `roles` work (a simple implementation)
 
 1.  Additional Middleware
 
