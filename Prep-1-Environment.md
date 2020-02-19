@@ -2,9 +2,9 @@
 
 ```javascript
 npm init
-npm i --save-dev nodemon jest
+npm i --save-dev nodemon jest supertest
 npm i express cors morgan helmet sqlite3 dotenv knex bcryptjs
-npx gitignore node supertest
+npx gitignore node
 ```
 
 # Package.json
