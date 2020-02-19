@@ -4,7 +4,7 @@
 npm init
 npm i --save-dev nodemon jest
 npm i express cors morgan helmet sqlite3 dotenv knex bcryptjs
-npx gitignore node
+npx gitignore node supertest
 ```
 
 # Package.json
