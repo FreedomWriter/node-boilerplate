@@ -25,6 +25,7 @@ npx gitignore node
 
 # .env file
 
+//could do a secrets file that exports and object then call secrets.PORT, etc...
 PORT = 5000
 JWT_SECRET = "super secret key string"
 
