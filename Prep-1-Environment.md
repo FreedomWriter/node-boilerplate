@@ -14,7 +14,12 @@ Scripts
     ```js
         "server": "cross-env NODE_ENV=dev nodemon index.js",
         "start": "node index.js",
-        "test": "cross-env NODE_ENV=test jest --verbose --watch"
+        "test": "cross-env DB_ENV=testing jest --verbose --watch"
+        //to be added
+        ,
+           "jest": {
+        "testEnvironment": "node"
+        }
     ```
 
 Add an additional configuration
