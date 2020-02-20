@@ -8,7 +8,7 @@
 
 # Example seed data:
 
-    ```javascript
+    ```js
     // user seed data with hashed password
     const bcrypt = require("bcryptjs");
 
@@ -28,7 +28,9 @@
         { project_id: 1, task_description: "start understanding" }
       ]);
     };
-    ```
+
+```
 
 - When all seeds are created run them
-  `npx knex:seed run`
+ `npx knex:seed run`
+```
