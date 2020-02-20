@@ -8,29 +8,27 @@
 
 # Example seed data:
 
-    ```js
-    // user seed data with hashed password
-    const bcrypt = require("bcryptjs");
+```js
+const bcrypt = require("bcryptjs");
 
-    exports.seed = async function(knex) {
-      await knex("users").truncate();
-      await knex("users").insert([
-        { id: 1, username: "myUser", password: bcrypt.hashSync("password", 10) }
-      ]);
-    };
+// user seed data with hashed password
+exports.seed = async function(knex) {
+  await knex("users").truncate();
+  await knex("users").insert([
+    { id: 1, username: "myUser", password: bcrypt.hashSync("password", 10) }
+  ]);
+};
 
-    // other examples of seed data
-    exports.seed = async function(knex) {
-      await knex("tasks").truncate();
-      await knex("tasks").insert([
-        { project_id: 1, task_description: "Enroll in Lambda" },
-        { project_id: 1, task_description: "Cry", notes: "Don't cry too long" },
-        { project_id: 1, task_description: "start understanding" }
-      ]);
-    };
-
+// other examples of seed data
+exports.seed = async function(knex) {
+  await knex("tasks").truncate();
+  await knex("tasks").insert([
+    { project_id: 1, task_description: "Enroll in Lambda" },
+    { project_id: 1, task_description: "Cry", notes: "Don't cry too long" },
+    { project_id: 1, task_description: "start understanding" }
+  ]);
+};
 ```
 
 - When all seeds are created run them
- `npx knex:seed run`
-```
+  `npx knex:seed run`
