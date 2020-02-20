@@ -2,7 +2,7 @@
 
 ```javascript
 npm init
-npm i --save-dev nodemon jest supertest
+npm i --save-dev nodemon jest supertest cross-env
 npm i express cors morgan helmet sqlite3 dotenv knex bcryptjs
 npx gitignore node
 ```
@@ -12,9 +12,9 @@ npx gitignore node
 Scripts
 
     ```js
-        "server": "nodemon index.js",
+        "server": "cross-env NODE_ENV=dev nodemon index.js",
         "start": "node index.js",
-        "test": "jest --verbose --watch"
+        "test": "cross-env NODE_ENV=test jest --verbose --watch"
     ```
 
 Add an additional configuration
