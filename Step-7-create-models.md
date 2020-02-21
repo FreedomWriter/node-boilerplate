@@ -17,6 +17,12 @@ const db =
     return db("projects").select();
   };
 
+function findBy(filter) {
+  return db("users")
+    .select("id", "username", "password")
+    .where(filter);
+}
+
 function findById(id) {
   return db("projects")
     .limit(req.query.limit)
@@ -48,6 +54,7 @@ function remove(id) {
 
 module.exports = {
   find,
+  findBy,
   findById,
   add,
   update,
