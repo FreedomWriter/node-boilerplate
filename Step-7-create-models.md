@@ -19,8 +19,8 @@ const db =
 
 function findBy(filter) {
   return db("users")
-    .select("id", "username", "password")
-    .where(filter);
+    .where(filter)
+    .findBy();
 }
 
 function findById(id) {
