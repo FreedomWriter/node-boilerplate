@@ -7,6 +7,16 @@ npm i express cors morgan helmet sqlite3 dotenv knex bcryptjs
 npx gitignore node
 ```
 
+Add to .gitignore:
+
+```js
+# Mac Files
+.DS_Store
+
+#vscode
+.vscode
+```
+
 # Package.json
 
 Scripts
