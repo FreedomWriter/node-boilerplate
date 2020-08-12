@@ -21,24 +21,24 @@ Add to .gitignore:
 
 Scripts
 
-    ```js
-        "server": "cross-env NODE_ENV=dev nodemon index.js",
-        "start": "node index.js",
-        "test": "cross-env DB_ENV=testing jest --verbose --watch"
-        //to be added
-        ,
-           "jest": {
-        "testEnvironment": "node"
-        }
-    ```
+```js
+"server": "cross-env NODE_ENV=dev nodemon index.js",
+"start": "node index.js",
+"test": "cross-env DB_ENV=testing jest --verbose --watch"
+//to be added
+,
+    "jest": {
+"testEnvironment": "node"
+}
+```
 
 Add an additional configuration
 
-    ```js
-    ,
-    "jest": {
-        "testEnvironment": "node"
-    }
+```js
+,
+"jest": {
+    "testEnvironment": "node"
+}
 
 ```
 
@@ -58,12 +58,10 @@ JWT_SECRET = "super secret key string"
 
 # Add to .gitignore
 
-```
+```js
 
 # database
 
 \*db3
-
-```
 
 ```
