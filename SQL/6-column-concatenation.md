@@ -10,3 +10,5 @@ FROM "public"."titles"
 ```
 
 This will return a single column named `Employee Title` with the value of `10001 Senior Engineer` which is a combination of the emp_no: 10001 and title: Senior Engineer, with a single space between them.
+
+Concat is a `Scalar` function, which does a "forEach" and operates on each record independantly
