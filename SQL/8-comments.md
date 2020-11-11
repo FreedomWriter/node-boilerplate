@@ -2,7 +2,7 @@
 
 ```sql
 -- Comment all the things
--- I like having single line comments
+-- We can use single line comments
 
 /*
 Multi line COMMENTS
