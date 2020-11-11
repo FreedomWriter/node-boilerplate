@@ -17,9 +17,11 @@ AND state = 'OR'
 
 We will get a count of all of the customerid's in the customer table where the gender is 'F' and the state is 'OR'. If a customer is male, or lives in a state beides Oregon, their record will not be included in our total count.
 
+So we could say, if `both` boolean expressions are `true`, the results will be returned.
+
 ## OR
 
-Using `OR` allows us to select data based on whetherthe first condition is met or the second condition is met.
+Using `OR` allows us to select data based on whether the first condition is met or the second condition is met.
 
 So given:
 
@@ -30,7 +32,9 @@ where state = 'OR'
 OR state = 'NY'
 ```
 
-We will get a count of all customers who live in either the state of Oregon or New York
+We will get a count of all customers who live in either the state of Oregon or New York.
+
+So we could say if `either` boolean expression is `true` then the results will be returned.
 
 ## Combining AND and OR
 
@@ -52,11 +56,13 @@ We can also exlude data using NOT:
 ```sql
 select count(customerid)
 from customers
-where NOt zip = 88654
+where NOT zip = 88654
 AND gender = 'F'
 AND (state = 'OR'
 or state = 'NY')
 ```
+
+This will return a data set containing all female customers who live in Oregon or New York but not in zip code 88645.
 
 ## To note:
 
