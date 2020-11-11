@@ -1,4 +1,4 @@
-# The AND and the OR keywords
+# The AND, OR, and NOT keywords
 
 Get all female customers who live in Oregon or New York:
 
@@ -7,6 +7,17 @@ select count(customerid)
 from customers
 where gender = 'F'
 -- note the parenthesis that wraps the OR statements
+AND (state = 'OR'
+or state = 'NY')
+```
+
+We can also exlude data using NOT:
+
+```sql
+select count(customerid)
+from customers
+where NOt zip = 88654
+AND gender = 'F'
 AND (state = 'OR'
 or state = 'NY')
 ```
