@@ -12,3 +12,6 @@ or state = 'NY')
 ```
 
 ## To note:
+
+There is an order of operations
+OR creates a new branch of the filter, the following query will not consider anything before it.
