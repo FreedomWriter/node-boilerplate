@@ -68,3 +68,5 @@ This will return a data set containing all female customers who live in Oregon o
 
 There is an order of operations
 OR creates a new branch of the filter, the following query will not consider anything before it.
+
+So we could say, when using `NOT`, if the boolean expression is `false` the data will be returned.
