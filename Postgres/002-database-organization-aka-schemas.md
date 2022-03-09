@@ -28,5 +28,6 @@ where postgres is the database we are currently in.
 
 Using schemas:
 - allows many users to use one database without intefering with each other
+  - different schemas can have tables with the same name, which wouldn't be possible with only one schema
 - allows us to organize database ojects into logical groups to make them more manageable
 - allows third party applications to be put into separate schemas so they do not collide with the name of other objects
