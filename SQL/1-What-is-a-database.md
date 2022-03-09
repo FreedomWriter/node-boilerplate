@@ -8,13 +8,19 @@ A database is an organized collection of data, generally stored and accessed ele
 
 Essentially resources were stored in files and had no connection to each other. In the case of an order processing system, instead of tables for each resource, there would be a file that existed for each resource. None of those files stored references to other files, so if something changed in one file, it would not be reflected in the rest of the system. Every one was building their own systems - no standardization. This meant every system was specific to a particular data, resulting in a user needing to learn a new system each time then needed to use a new FPS. Systems couldn't talk to each other, data was stored redundantly, it was difficult!
 
-## Dabase Management Software
+## Dabase Management System
 
 From [techopedia]("https://www.techopedia.com/definition/24361/database-management-systems-dbms")
 
 A database management system (DBMS) is a software package designed to define, manipulate, retrieve and manage data in a database. A DBMS generally manipulates the data itself, the data format, field names, record structure and file structure. It also defines rules to validate and manipulate this data.
 
 Database management systems are set up on specific data handling concepts, as the practice of administrating a database evolves. The earliest databases only handled individual single pieces of specially formatted data. Today’s more evolved systems can handle different kinds of less formatted data and tie them together in more elaborate ways.
+
+### Relation Database Management System (RDBMS)
+
+A subset of DBMS.
+
+The most common type of databases
 
 ## Database Model
 
